@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+body 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Langar', cursive;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/static/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .wave
+{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(/static/images/wave.png);
+    animation: animate 10s linear infinite;
+}
+section .wave:before
+{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url(/static/images/wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    animation: animate-reverse 5s linear infinite;
+}
+@keyframes animate 
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 1360px;
+    }
+}
+@keyframes animate-reverse 
+{
+    0%
+    {
+        background-position: 1360px;
+    }
+    100%
+    {
+        background-position: 0;
+    }
+}
+section h1
+{
+    font-size: 5em;
+    color: #fff;
+    margin: 0;
+    padding:0;
+}
+section p
+{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 200px;
+    font-size: 25px;
+}
+.body .content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.body .content .album
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+}
+.body .content .album img
+{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+.body .content .album p
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+.image
+{
+    position: relative;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+.hover
+{
+    opacity: 0;
+    font-size: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 300px;
+    height: 200px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+.image .hover:hover
+{
+    opacity: 1;
+}
+.image .hover .text
+{
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+.image .hover:hover .text {
+    opacity: 1;
+    transform: translateY(130px);
+    -webkit-transform: translateY(130px);
+}
+a
+{
+    color: #111;
+    text-decoration: none;
+}
+a:hover
+{
+    color: blue;
+    text-decoration: underline;
+}
+#ajeeb_wale_ki_photo
+{
+    max-width: 300px;
+    box-shadow: 5px 10px 10px #111;
+    border-radius: 10px;
+}
+#ajeeb_ghar
+{
+    /* max-width: auto; */
+    box-shadow: 5px 10px 10px #111;
+    border-radius: 10px;
+}

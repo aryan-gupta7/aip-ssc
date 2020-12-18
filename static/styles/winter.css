@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Langar",cursive;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/static/images/bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section h1
+{
+    font-size: 5em;
+    color: #00f;
+    margin: 0;
+    padding:0;
+    text-shadow: 2px 2px 10px white;
+    margin-bottom: 300px;
+}
+p
+{
+    color: #111;
+    font-size: 1.9em;
+    text-align: center;
+    margin: 100px;
+    padding: 0;
+}
+.album
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 100px;
+
+}
+.album img{
+    width: 400px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(90, 90, 90, 0.7);
+    border-radius: 10px;
+}
+a
+{
+    text-decoration: none;
+    color: #000;
+    transition: 1s;
+    font-size: 30px;
+    text-align: right;
+
+}
+a:hover
+{
+    color: #004e92;
+    text-decoration: underline;
+}
+.links
+{
+    display: flex;
+    justify-content: left;
+    margin: 100px;
+    align-items: center;
+}

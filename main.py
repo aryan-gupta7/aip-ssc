@@ -26,5 +26,9 @@ def summer():
 def monsoon():
     return render_template("monsoon.html")
 
+@app.errorhandler(404)
+def not_found(e):
+    return "INVALID URL!"
+
 if __name__ == "__main__":
     app.run(debug=True)
